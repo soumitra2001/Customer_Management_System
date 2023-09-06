@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Customer Management System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<div class="main-w3layouts wrapper">
+  <h1>Customer Details</h1>
+  <div class="main-agileinfo">
+    <div class="agileits-top">
+      <form th:action="@{/register}" th:object="${customer}" method="POST">
+        <input class="text" type="text" name="first_name" th:field="*{first_name}" placeholder="First Name" required=""><br>
+        <input class="text" type="text" name="last_name" th:field="*{last_name}" placeholder="Last Name" required=""><br>
+        <input class="text" type="text" name="street" th:field="*{street}" placeholder="Street" required=""><br>
+        <input class="text" type="email" name="email" th:field="*{email}" placeholder="Email" required=""><br>
+        <input class="text" type="text" name="address" th:field="*{address}" placeholder="Address" required=""><br>
+        <input class="text" type="text" name="city" th:field="*{city}" placeholder="city" required=""><br>
+        <input class="text" type="text" name="state" th:field="*{state}" placeholder="State" required=""><br>
+        <input class="text" type="text" name="phone" th:field="*{phone}" placeholder="Phone" required="">
+        <div class="wthree-text">
+          <div class="clear"> </div>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <ul class="colorlib-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+</body>
+</html>
